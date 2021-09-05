@@ -276,8 +276,8 @@ align-items: center;
     margin-right: 10px; 
 }
   
-  .item-icon:hover svg,
-  .item-icon:focus svg {
+  .item-icon a:hover svg,
+  .item-icon a:focus svg {
     fill:var(--accent-color)
   }
   
@@ -706,7 +706,6 @@ ul .address--write:not(:last-child){
     line-height: 2;
     letter-spacing: 0.06em;
     font-weight: bold;
-    font-family: Roboto;
     font-style: normal;
     margin-bottom: 4px;
 }
@@ -739,12 +738,17 @@ ul .address--write:not(:last-child){
     background-color: var(--our-team);
     border: 0px;
     border-radius: 4px;
+
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.625;
     letter-spacing: 0.03em;
     color: var(--streng-black);
     cursor: pointer;
+    text-align: center; 
+    font-family: 'Roboto';
+
+
 }
 
 .filter-down{
@@ -797,9 +801,12 @@ margin-bottom: 50px;
     justify-content: center;
     width: 170px;
     height: 92px;
-    fill: #AFB1B8;;
+    fill: #AFB1B8;
+ 
+
 
     border: 1px solid #AFB1B8 ;  
+    border-radius: 4px;
 }
 
 .link-client:hover,
