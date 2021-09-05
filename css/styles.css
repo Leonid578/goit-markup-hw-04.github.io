@@ -13,13 +13,12 @@
     --accent-color: #2196F3;
     --our-team:#F5F4FA;
     --footer-color:#2F303A;
-    --background-color-fon: #ffffff;
     --background-color-section: #2F303A;
     --color-black:black; 
     --hero:#2F303A;
     --border-color: #eeeeee;
     --background-we:#F5F4FA;
-    --ptimary-lighte-color: #ffffff;
+    --color-icon: #afb1b8;
 }
 
 /* ---------------------Body--------------------- */
@@ -57,7 +56,7 @@ li{
 
 body {
 font-family: 'Roboto', sans-serif;
-background-color: var(--background-color-fon);
+background-color: var(--mail-title-color);
 color: var(--main-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -110,10 +109,6 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.06em;
     border: none; 
-}
-
-.btn2{
-    padding: 6px 22px;
 }
 
 .btn:hover,
@@ -269,7 +264,11 @@ align-items: center;
   }
 
 .icon.soc-icon{
-    fill: var(--background-color-fon);
+    fill: var(--mail-title-color);
+}
+
+.icon-client{
+    fill: var(--color-icon);
 }
 
 .icon-header{
@@ -293,7 +292,7 @@ align-items: center;
 
 .soc-link:hover svg,
 .soc-link:focus svg {
-    fill: var(--ptimary-lighte-color);
+    fill: var(--mail-title-color);
   }
 
   .social-links .link:hover,
@@ -311,13 +310,6 @@ align-items: center;
     align-items: center;
 }
 
-.bottom-margin{
-    margin-bottom:94px;
-}
-
-.top-margin{
-    margin-top:94px;
-}
 
 .flex-container{
     display: flex;
@@ -607,7 +599,7 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
-color: var(--background-color-fon);
+color: var(--mail-title-color);
 
 margin-bottom: 20px;
 }
@@ -655,7 +647,7 @@ margin-bottom: 20px;
 }
 
 .icon-footer{
-    fill: var(--background-color-fon);
+    fill: var(--mail-title-color);
 }
 
 .filter:hover,
@@ -766,15 +758,15 @@ ul .address--write:not(:last-child){
   }
 
 .Regular-customers{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.3;
-text-align: center;
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-color: var(--main-text-color);
-margin-bottom: 50px;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
 }
 
 .container-clients {
@@ -802,10 +794,7 @@ margin-bottom: 50px;
     width: 170px;
     height: 92px;
     fill: #AFB1B8;
- 
-
-
-    border: 1px solid #AFB1B8 ;  
+    border: 1px solid var(--color-icon);  
     border-radius: 4px;
 }
 
